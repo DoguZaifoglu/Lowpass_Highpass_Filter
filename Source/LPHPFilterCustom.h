@@ -2,7 +2,7 @@
 #include "JuceHeader.h"
 
 
-// This defines the interface of the lowpass/highpass filter.
+// Defining the buttons/options on the interface.
 class LPHPFilterCustom
 {
 public:
