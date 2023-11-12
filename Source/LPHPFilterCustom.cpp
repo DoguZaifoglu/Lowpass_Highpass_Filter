@@ -29,8 +29,8 @@ void LPHPFilterCustom::processBlock(juce::AudioBuffer<float>& buffer, juce::Midi
 
 	for (auto channel = 0; channel < buffer.getNumChannels(); ++channel)
 	{
-		auto channelSamples = buffer.getWritePointer(channel); //a write pointer because we will modify the samples.
-		// now we apply the circuit schematic
+		auto channelSamples = buffer.getWritePointer(channel); //a write pointer because samples will be modified.
+		
 		for (auto i = 0; i < buffer.getNumSamples(); ++i)
 		{
 			const auto inputSample = channelSamples[i];
